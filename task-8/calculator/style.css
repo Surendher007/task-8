@@ -1,0 +1,38 @@
+.calculator {
+    width: 200px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.result {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.buttons button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttons button:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.buttons button:nth-child(even) {
+    background-color: #ddd;
+}
+
+.buttons button:hover {
+    background-color: #ccc;
+}
